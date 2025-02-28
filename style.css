@@ -1,0 +1,121 @@
+html{
+    font-family: "Roboto Condensed", serif;
+}
+
+body{
+    background-color: #d0b8b3;
+}
+
+.Contenedor_calculadora {
+    background-color: #f1d7d2;
+    position: absolute;
+    height: 600px;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border-radius: 1rem;
+}
+
+.Pantalla { 
+    position: relative;
+    display: flex;
+    height: 15%;
+    width: 100%;
+    background-color: #f0eae8;
+    border-radius: 1rem;
+    font-size: 45px;
+    align-items: center;
+    justify-content: right;
+    padding: 10px; 
+    box-sizing: border-box; 
+    overflow-x: auto;
+    }
+
+.contenedor_teclado { 
+    position: relative;
+    width: 100%;
+    height: 82%;
+    top: 3%;
+    border-radius: 1rem;
+    
+}
+
+.teclado{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr );
+    grid-template-rows: repeat(4, 1fr );
+    align-items: center;
+    justify-items: center;
+}
+
+.btn {
+    background-color: #d0b8b3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    }
+
+#restar{
+    background-color: #d0b8b3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+ }
+
+#igual {
+    grid-column: 5/5 ;
+    grid-row: 3/5;
+    font-size: 25px;
+    background-color: #f0eae8;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#c{
+    font-size: 25px;
+    background-color: #f0eae8;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#f0eae8 ;
+}
+#restar:hover {
+    background-color:#f0eae8 ;
+}
+#igual:hover {
+    background-color:#d0b8b3;
+}
+
+
+#c:hover {
+    background-color: #d0b8b3;
+}
